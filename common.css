@@ -1,0 +1,90 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0; letter-spacing: -0.2px;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+label, input {display: block;}
+input,select,textarea,button {vertical-align: middle;margin: 0;padding: 0;-webkit-tap-highlight-color: rgba(0, 0, 0, .1);}
+textarea {resize: none}
+body {line-height: 1;-webkit-text-size-adjust: none;height: 100%;}
+legend,caption,.blind {position: absolute;clip: rect(0 0 0 0);font-size: 0; visibility:hidden;margin: -1px;width: 0px;height: 0px;line-height: 0px;}
+body,input,select,textarea,button,table,a{font-family: 'Heebo','Noto Sans',sans-serif;font-size: 14px;color: #333;}
+a {text-decoration: none;}
+button {cursor: pointer}
+fieldset,img {border: 0;vertical-align: top}
+ol, ul {list-style: none;}
+.clearfix:after {content: '';clear: both;display: block;}
+table {border-collapse: collapse;border-spacing: 0;}
+*, *:before, *:after {box-sizing: border-box;}
+*:focus {border-color: #333;}
+*::placeholder {color: #bbb;}
+/* 텍스트 폼 공통 */
+input[type="text"] {border: 1px solid #dee1e6;border-radius: 4px;height: 56px;width: 100%;padding: 0 50px 0 10px; color: #bbb; font-weight: 600;}
+input[type="text"]::-ms-clear {display:none;}
+/* 체크박스 폼 공통 */
+input[type="checkbox"] + label {float:left;position: relative;padding-left: 24px;line-height: 24px;font-weight: 600;color: #999;cursor: pointer;}
+input[type="checkbox"] + label:before {content: '';position: absolute;left: 0;top: 3px;width: 16px;height: 16px;border: 1px solid #e0e1e6;border-radius: 4px;cursor: pointer;}
+/* 라디오버튼 폼 공통 */
+input[type="radio"] + label {position: relative;padding-left: 25px;cursor: pointer; color: #222; font-weight: 500; padding-top: 4px;}
+input[type="radio"]:checked + label {color: #0101c9;font-weight: 800;}
+input[type="radio"] + label:before {content: '';position: absolute;left: 0;top: 3px;width: 16px;height: 16px;border: 1px solid #e0e1e6;border-radius: 4px;cursor: pointer;}
+input[type="radio"]:checked + label:before {content:'';position: absolute;left:0;top: 3px;width: 16px;height: 16px;border: 1px solid #0101c9;}
+input[type="radio"]:checked + label:after {content:'';position: absolute;left:3px;top: 6px;width: 10px;height: 10px;border-radius: 2px;background: #0101c9;}
+/* 셀렉트 공통 */
+.select_wrap {position: relative;top: 0;display: inline-block;border: 1px solid #dee1e6; border-radius: 4px; line-height: 54px; width: 100%;background:#f7f8fa;}
+.select_wrap:after {content: '';position: absolute;right: 16px;top: 24px;width: 7px;height: 7px;border-right: 2px solid #bbb;border-bottom: 2px solid #bbb;transform: rotateZ(45deg);-ms-transform: rotate(45deg);z-index: 5;}
+.select_wrap select {width: 100%;height: 54px;border: 0;color: #bbb;font-weight: 600;padding-left:10px;border-radius: 4px;-moz-appearance: none;-webkit-appearance: none;appearance: none;z-index: 1;outline: none; background: #f7f8fa;}
+.select_wrap select option {color: #bbb;}
+/* IE10~ 셀렉트 화살표 제거. */
+select::-ms-expand {display: none;}
+/* 스킵 네비게이션 */
+#skipNavi {position: absolute;left: 0;top: -50px;text-indent: -9999px;font-size: 0;width: 100%;z-index: 9999;}
+#skipNavi a:focus,#skipNavi a:active {position: absolute;left: 0;top: 50px;display: block;width: 100%;padding: 5px 0;text-align: center;text-indent: 0;font-size: 13px;font-weight: bold;background: #f2f2f2;}
+
+
+
+
+
+/************************
+
+ MINERVA IT - Mobile.ver
+
+*************************/
+
+
+#wrap {min-width: 375px;}
+/* 헤더 */
+#header {position: relative; left:0; top: 0; width: 100%;height: 64px;background: #fff;z-index:9999;}
+#header .logo {position: absolute;left: 24px;top: 20px;}
+#header .logo a {display: block;}
+#header .logo a img {width: 145px; height: 25px;}
+/* 헤더.gnb */
+#header .btn_gnb {position: absolute;right: 24px;top: 25px;width: 15px;height: 12px;background: url(../images/ico_menu.png) no-repeat;text-indent: -9999px;border: none;}
+
+/* 푸터 */
+#footer {width: 100%; background: #080808;}
+/* 푸터 탑*/
+#footer .footer_top {width: 100%;}
+#footer .footer_top .lang {float: left; border: none;background: #292929;width: calc(100% - 194px); line-height: 64px;}
+#footer .footer_top .lang span {float:left; position: relative; line-height: 64px; margin-left: 48px;color: #aaa; font-weight: 700;}
+#footer .footer_top .lang span:before {content:'';position: absolute;left: -23px;top: 24px;width: 13px;height: 13px;background: url(../images/ico_globe.png) no-repeat;}
+#footer .footer_top a {float:left;width: 64px; line-height: 64px; margin-left: 1px; text-align: center;background: #292929;}
+#footer .footer_top a img {margin-top: 20px;}
+#footer .footer_top a.link_youtube {margin-left: 0;}
+#footer .footer_top a.btn_top {color: #aaa; font-weight: 700;}
+/* 푸터 바텀 */
+#footer .footer_bot {width: 100%;padding: 25px;}
+#footer .footer_bot .box_email {overflow: hidden;margin-bottom: 123px;}
+#footer .footer_bot .box_email input[type="text"] {float: left;width: calc(100% - 80px); height: 56px; border: 1px solid #333; border-radius: 0;background: #080808;}
+#footer .footer_bot .box_email input[type="text"]::placeholder {color: #fff;}
+#footer .footer_bot .box_email .btn_signup {float: left;width: 80px;line-height: 56px;background: #3636c6;border: none;color: #fff;}
+/* 푸터 바텀. 카피라이트 */
+#footer .footer_bot .copyright {width: 100%;}
+#footer .footer_bot .copyright .tit {color: #fff;text-align: center;margin-bottom: 16px;}
+#footer .footer_bot .copyright .fnb {overflow: hidden;text-align: center;}
+#footer .footer_bot .copyright .fnb .top {margin-bottom: 12px;}
+#footer .footer_bot .copyright .fnb ul {display: inline-block;}
+#footer .footer_bot .copyright .fnb .top li,
+#footer .footer_bot .copyright .fnb .bot li{position: relative;float: left;margin-right: 33px;}
+#footer .footer_bot .copyright .fnb .top li:last-child,#footer .footer_bot .copyright .fnb .bot li:last-child {margin-right: 0;}
+#footer .footer_bot .copyright .fnb .top li:after,#footer .footer_bot .copyright .fnb .bot li:after {content: '';position: absolute;right: -16px;top: 2px;width: 1px;height: 9px;background: #444;}
+#footer .footer_bot .copyright .fnb .top li:last-child:after,#footer .footer_bot .copyright .fnb .bot li:last-child:after {display: none;}
+#footer .footer_bot .copyright .fnb li a {font-size: 13px;color: #888;}
